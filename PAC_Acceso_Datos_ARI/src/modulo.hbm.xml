@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/HibernateMappingDTD5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hibernate.Modulo" table="Modulo" catalog="MIBBDD">
+        <id name="idModulo">
+            <column name="modulo_id"/>
+            <generator class="assigned"></generator>
+        </id>
+        <property name="nombre" type="String"></property>
+        <property name="codigo" type="int"></property>
+    </class>
+</hibernate-mapping>
